@@ -8,11 +8,20 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import java.sql.*;
 /**
+* Servelet que usa BD para INGRESAR
 * @author: Sanchez Mendez Edmundo Josue, Rodriguez Morua Genaro 
 * @version:  1.0 29/agosto/2017 
 **/
 public class Login extends HttpServlet {
- 
+    /**
+     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
+     * methods.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
    protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
        //Ponemos la conexion y llamabos los campos que lleno
